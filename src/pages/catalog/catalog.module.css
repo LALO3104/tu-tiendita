@@ -1,0 +1,31 @@
+.page {
+  max-width: var(--breakpoint-large-desktop);
+  margin-inline: auto;
+  padding: var(--spacing-2xl) var(--spacing-lg) var(--spacing-4xl);
+}
+
+.title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.description {
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+}
+
+.placeholderCard {
+  margin-top: var(--spacing-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+}
+
+.placeholderText {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}

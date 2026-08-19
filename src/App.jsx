@@ -1,7 +1,7 @@
+import AppRouter from '@/routes/app-router';
+
 function App() {
-  return (
-    <h1>TU TIENDITA</h1>
-  );
+  return <AppRouter />;
 }
 
 export default App;
