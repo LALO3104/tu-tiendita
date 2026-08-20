@@ -3,6 +3,7 @@ import Cart from '@/pages/cart';
 import Catalog from '@/pages/catalog';
 import Home from '@/pages/home';
 import NotFound from '@/pages/not-found';
+import ProductDetail from '@/pages/product-detail';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -13,11 +14,12 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'catalogo', element: <Catalog /> },
       { path: 'carrito', element: <Cart /> },
+      { path: 'producto/:slug', element: <ProductDetail /> },
       { path: '*', element: <NotFound /> },
     ],
   },
 ]);
 
-const AppRouter = () => <RouterProvider router={router} />;
-
-export default AppRouter;
+export default function AppRouter() {
+  return <RouterProvider router={router} />;
+}

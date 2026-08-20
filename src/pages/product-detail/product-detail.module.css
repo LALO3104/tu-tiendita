@@ -1,0 +1,17 @@
+.container {
+  min-height: 60vh;
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.slug {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+}

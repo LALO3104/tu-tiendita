@@ -1,31 +1,56 @@
-.page {
+.container {
   max-width: var(--breakpoint-large-desktop);
-  margin-inline: auto;
-  padding: var(--spacing-2xl) var(--spacing-lg) var(--spacing-4xl);
+  margin: 0 auto;
+  padding: var(--spacing-lg);
 }
 
 .title {
-  font-size: var(--font-size-3xl);
-  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
   color: var(--color-text-primary);
+  margin-bottom: var(--spacing-lg);
 }
 
-.description {
-  margin-top: var(--spacing-sm);
-  font-size: var(--font-size-md);
+.message {
   color: var(--color-text-secondary);
-}
-
-.placeholderCard {
-  margin-top: var(--spacing-2xl);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px;
   text-align: center;
+  padding: var(--spacing-xl) 0;
 }
 
-.placeholderText {
-  color: var(--color-text-muted);
-  font-size: var(--font-size-sm);
+.error {
+  color: var(--color-error);
+  text-align: center;
+  font-weight: var(--font-weight-medium);
+}
+
+.technical {
+  font-size: var(--font-size-xs);
+  color: var(--color-error);
+  text-align: center;
+  font-family: monospace;
+  margin-top: var(--spacing-xs);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
